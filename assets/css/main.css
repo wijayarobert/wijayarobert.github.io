@@ -2604,7 +2604,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 22%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2645,7 +2645,7 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 8em 3em 1em 3em;
+			margin: 10em 3em 1em 3em;
 			width: 11em;
 		}
 
@@ -3214,7 +3214,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				padding: 4.5em 2em;
 			}
 
 				#header h1 br {
