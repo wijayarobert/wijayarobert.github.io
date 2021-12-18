@@ -2602,9 +2602,9 @@ input, select, textarea {
 		left: 0;
 		padding: 2em 1em 1em;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
-		width: 25%;
+		width: 35%;
 	}
 
 		#header > * {
@@ -2621,6 +2621,10 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
+		}
+
+		#header > .inner > h2 {
+			text-align: left;
 		}
 
 		#header strong, #header b {
@@ -2645,7 +2649,7 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 10em 3em 1em 3em;
+			margin: 6em 3em 1em 3em;
 			width: 12em;
 		}
 
