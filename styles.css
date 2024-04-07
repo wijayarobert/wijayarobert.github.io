@@ -85,9 +85,10 @@
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-container {
-    zoom: 1; /* Reset scaling for tablets */
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    zoom: 0.9; /* Reduce scaling for tablets */
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    margin-top: 50px;
   }
 }
