@@ -58,6 +58,8 @@
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
+    display: flex;
+    flex-direction: column;
   }
 
   .side {
@@ -65,12 +67,14 @@
     height: auto;
     float: none;
     margin-right: 0;
-    font-size: 14px; /* Adjust font size for mobile */
+    font-size: 14px;
+    order: 2; /* Move the side section to the bottom */
   }
 
   .main {
     float: none;
-    font-size: 16px; /* Adjust font size for mobile */
+    font-size: 16px;
+    order: 1; /* Move the main section to the top */
   }
 
   .heading .photo p img {
