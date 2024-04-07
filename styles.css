@@ -47,3 +47,32 @@
 .main hr{
   color:gainsboro;
 }
+
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+  .main-container {
+    max-width: 100%;
+    margin-top: 50px;
+    zoom: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .side {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-right: 0;
+  }
+
+  .main {
+    float: none;
+    font-size: small;
+  }
+
+  .heading .photo p img {
+    width: 100px;
+  }
+}
