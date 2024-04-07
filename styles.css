@@ -65,11 +65,12 @@
     height: auto;
     float: none;
     margin-right: 0;
+    font-size: 14px; /* Adjust font size for mobile */
   }
 
   .main {
     float: none;
-    font-size: small;
+    font-size: 16px; /* Adjust font size for mobile */
   }
 
   .heading .photo p img {
