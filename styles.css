@@ -1,8 +1,13 @@
 .main-container{
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 800px;
   font-family:'Cormorant Garamond', serif;
+  zoom: 1.1; /* Zoom in by 120% */
+  -moz-transform: scale(1.2); /* For Firefox */
+  -webkit-transform: scale(1.2); /* For Chrome, Safari, Opera */
+  transform: scale(1.2); /* Standard syntax */
+  margin-top: 150px;
 }
 
 .heading{
@@ -23,9 +28,9 @@
 }
 
 .side{
-  width:40%;
+  width:35%;
   height: 1000px;
-  font-size: medium;
+  font-size: small;
   margin-right: 25px;
   float: left;
 }
