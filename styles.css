@@ -3,7 +3,7 @@
   margin-right: auto;
   max-width: 800px;
   font-family:'Cormorant Garamond', serif;
-  zoom: 1.1; /* Zoom in by 120% */
+  zoom: 1.2; /* Zoom in by 120% */
   -moz-transform: scale(1.2); /* For Firefox */
   -webkit-transform: scale(1.2); /* For Chrome, Safari, Opera */
   transform: scale(1.2); /* Standard syntax */
