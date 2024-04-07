@@ -81,3 +81,13 @@
     width: 100px;
   }
 }
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-container {
+    zoom: 1; /* Reset scaling for tablets */
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
