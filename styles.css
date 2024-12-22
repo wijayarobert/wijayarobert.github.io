@@ -92,3 +92,9 @@
     margin-top: 5px;
   }
 }
+
+
+.social-links a {
+  text-decoration: none; /* Removes any underline */
+  border: none; /* Removes any border */
+}
