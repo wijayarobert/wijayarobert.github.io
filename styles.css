@@ -102,3 +102,17 @@
 .small-margin {
   margin-top: 8px;
 }
+
+.side details {
+  margin-bottom: 10px;
+}
+
+.side summary {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+.side ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
