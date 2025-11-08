@@ -127,3 +127,21 @@
 .cv-item .info .role {font-size: 0.8rem;}
 .cv-item .info .dates { font-size: 0.8rem; line-height: 1.25; }
 .cv-item .info .dates { color: #555; }
+
+
+/* Make only the Recent Works block smaller */
+#recent-works ~ details {
+  font-size: 0.8rem;   /* tweak to 0.9rem if you want smaller */
+  /* line-height: 1.45; */
+}
+
+/* Year labels (“2025”, “2024”, …) */
+#recent-works ~ details > summary {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Paper titles */
+#recent-works ~ details strong {
+  font-size: 0.8rem;      /* slightly larger than body to keep hierarchy */
+}
