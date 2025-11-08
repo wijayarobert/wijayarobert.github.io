@@ -116,3 +116,14 @@
   margin-left: 20px;
   margin-top: 5px;
 }
+
+
+.cv-section { margin: 16px 0 8px; }
+.cv-section h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.cv-item { display: flex; align-items: flex-start; gap: 12px; margin: 10px 20px; }
+.cv-item .logo { width: 100px; height: 28px; object-fit: contain; margin-top: 2px; }
+.cv-item .logo-sutd { width: 100px; height: 40px; object-fit: contain; margin-top: 2px; }
+.cv-item .info .org { font-size: 0.8rem; font-weight: bold; }
+.cv-item .info .role {font-size: 0.8rem;}
+.cv-item .info .dates { font-size: 0.8rem; line-height: 1.25; }
+.cv-item .info .dates { color: #555; }
