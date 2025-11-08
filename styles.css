@@ -93,11 +93,14 @@
   }
 }
 
-
+.social-links{
+  font-size: 0.8rem;
+}
 .social-links a {
   text-decoration: none; /* Removes any underline */
   border: none; /* Removes any border */
 }
+
 
 .small-margin {
   margin-top: 8px;
@@ -144,4 +147,8 @@
 /* Paper titles */
 #recent-works ~ details strong {
   font-size: 0.8rem;      /* slightly larger than body to keep hierarchy */
+}
+
+#misc ~ ul {
+  font-size: 0.8rem;
 }
