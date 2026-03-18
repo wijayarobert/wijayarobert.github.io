@@ -3,9 +3,10 @@
   margin-right: auto;
   max-width: 800px;
   font-family:'Cormorant Garamond', serif;
-  /* Avoid CSS scaling (transform/zoom) which causes subpixel rounding
-     differences across browser zoom levels. Use font-size instead. */
-  font-size: 18px; /* previously achieved via zoom/scale */
+  zoom: 1.2; /* Zoom in by 120% */
+  -moz-transform: scale(1.2); /* For Firefox */
+  -webkit-transform: scale(1.2); /* For Chrome, Safari, Opera */
+  transform: scale(1.2); /* Standard syntax */
   margin-top: 150px;
 }
 
@@ -53,7 +54,10 @@
   .main-container {
     max-width: 100%;
     margin-top: 50px;
-    font-size: 16px;
+    zoom: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     display: flex;
     flex-direction: column;
   }
@@ -81,7 +85,10 @@
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-container {
-    font-size: 17px; /* slightly smaller on tablet */
+    zoom: 0.98; /* Reduce scaling for tablets */
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
     margin-top: 5px;
   }
 }
