@@ -27,21 +27,23 @@
   font-weight: 100;
 }
 
-.side{
-  width:35%;
-  height: 1000px;
+.side {
+  flex: 0 0 35%;
+  height: auto;
   font-size: small;
-  margin-right: 25px;
-  float: left;
+  margin-right: 0;
+  float: none;
 }
 
 .side ul{
   padding-left: 15px;
 }
 
-.main{
-  float:none;
-  font-size:14px;
+.main {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  float: none;
 }
 
 .main hr{
@@ -51,34 +53,18 @@
 
 /* Styles for mobile */
 @media (max-width: 767px) {
-  .main-container {
-    max-width: 100%;
-    margin-top: 50px;
-    zoom: 1;
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    display: flex;
+  .content-layout {
     flex-direction: column;
   }
 
   .side {
     width: 100%;
-    height: auto;
-    float: none;
-    margin-right: 0;
-    font-size: 14px;
-    order: 2; /* Move the side section to the bottom */
+    order: 2;
   }
 
   .main {
-    float: none;
-    font-size: 14px;
-    order: 1; /* Move the main section to the top */
-  }
-
-  .heading .photo p img {
-    width: 100px;
+    width: 100%;
+    order: 1;
   }
 }
 
@@ -133,22 +119,25 @@
 
 
 /* Make only the Recent Works block smaller */
-#recent-works ~ details {
-  font-size: 0.8rem;   /* tweak to 0.9rem if you want smaller */
-  /* line-height: 1.45; */
+.recent-works-section details {
+  font-size: 0.8rem;
 }
 
-/* Year labels (“2025”, “2024”, …) */
-#recent-works ~ details > summary {
+.recent-works-section summary {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-/* Paper titles */
-#recent-works ~ details strong {
-  font-size: 0.8rem;      /* slightly larger than body to keep hierarchy */
+.recent-works-section strong {
+  font-size: 0.8rem;
 }
 
-#misc ~ ul {
+.misc-section ul {
   font-size: 0.8rem;
+}
+
+.content-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
 }
