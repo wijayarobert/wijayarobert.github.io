@@ -1,13 +1,16 @@
-.main-container{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
-  font-family:'Cormorant Garamond', serif;
-  zoom: 1.2; /* Zoom in by 120% */
-  -moz-transform: scale(1.2); /* For Firefox */
-  -webkit-transform: scale(1.2); /* For Chrome, Safari, Opera */
-  transform: scale(1.2); /* Standard syntax */
-  margin-top: 150px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: min(100% - 32px, 800px);
+  margin: 80px auto 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
 }
 
 .heading{
@@ -48,6 +51,23 @@
 
 .main hr{
   color:gainsboro;
+}
+
+@media (min-width: 1025px) {
+  .main-container {
+    width: min(100% - 32px, 900px);
+    margin: 100px auto 40px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .main {
+    font-size: 0.95rem;
+  }
+
+  .side {
+    font-size: 0.80rem;
+  }
 }
 
 
@@ -134,6 +154,7 @@
 
 .misc-section ul {
   font-size: 0.8rem;
+  margin-left: -20px;
 }
 
 .content-layout {
