@@ -162,3 +162,10 @@ body {
   align-items: flex-start;
   gap: 25px;
 }
+
+.indonesia-flag {
+  width: 60px;
+  height: 40px;
+  background: linear-gradient(to bottom, #FF0000 50%, #FFFFFF 50%);
+  border: 1px solid #ccc;
+}
